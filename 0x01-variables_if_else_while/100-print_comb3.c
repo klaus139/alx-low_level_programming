@@ -1,35 +1,32 @@
 #include <stdio.h>
 /**
- * main - main function
+ * main -prints combination of numbers
  *
- * Return: end program
+ * Return: Always (Success)
  */
 int main(void)
 {
-	int a = 0;
-	int b = 0;
-	int coma = 1;
+	int c, i;
 
-	while (a <= 9)
+	for (c = '0'; c <= '9'; c++)
 	{
-		while (b <= 9)
+		for (i = '0'; i <= '9'; i++)
 		{
-			if (a < b)
+			if (c < i)
 			{
-				if (coma == 0)
-					putchar(',');
-				putchar(32);
-			}
-			coma = 0;
-			putchar(a + '0');
-			putchar(b + '0');
-		}
-		++b;
-	}
-	++a;
-	b = 0;
-}
-putchar(10);
+				putchar(c);
+				puitchar(i);
 
-return (0);
+				if (c != '8' || (c == '8' && i != '9'))
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+		}
+	}
+
+	putchar('\n');
+
+	return (0);
 }
