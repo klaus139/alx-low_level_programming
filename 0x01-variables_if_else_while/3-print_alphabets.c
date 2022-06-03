@@ -7,7 +7,7 @@
 int main(void)
 {
 	char low;
-	char up;
+	char UP;
 
 	for (low = 'a'; low <= 'z'; ++low)
 
