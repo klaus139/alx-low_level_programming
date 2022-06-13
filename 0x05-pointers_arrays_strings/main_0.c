@@ -3,7 +3,7 @@
 void _puts(char *);
 
 /**
- * main - check the code for the Holberton School students.
+ * main - check the code for Holberton School students.
  *
  * Return: Always 0.
  */
