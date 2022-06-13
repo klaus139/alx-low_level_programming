@@ -1,6 +1,5 @@
+#include "main.h"
 #include <stdio.h>
-
-void rev_string(char *);
 
 /**
  * main - check the code for the Holberton School students.
@@ -9,10 +8,29 @@ void rev_string(char *);
  */
 int main(void)
 {
-	char s[446] =  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+	char s1[98] = "Hello ";
+	char s2[] = "world!\n";
+	char *p;
 
-	printf("%s\n", s);
-	rev_string(s);
-	printf("%s\n", s);
+	printf("%s\n", s1);
+
+	printf("%s", s2);
+
+	p = _strncat(s1, s2, 1);
+
+     	printf("%s\n", s1);
+
+	printf("%s", s2);
+
+	printf("%s\n", p);
+
+	p = _strncat(s1, s2, 1024);
+
+	printf("%s", s1);
+	
+	printf("%s", s2);
+
+	printf("%s", p);
+
 	return (0);
 }
