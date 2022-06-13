@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void _puts(char *);
+void rev_string(char *);
 
 /**
  * main - check the code for Holberton School students.
@@ -9,9 +9,10 @@ void _puts(char *);
  */
 int main(void)
 {
-	char *str;
+	char s[11] = "Holberton!";
 
-	str = "Holberton!";
-	_puts(str);
+	printf("%s\n", s);
+	rev_string(s);
+	printf("%s\n", s);
 	return (0);
 }
