@@ -11,7 +11,7 @@ int main(void)
 {
 	char *str;
 
-	str = "Holberton!";
+	str = "main";
 	_puts(str);
 	return (0);
 }
