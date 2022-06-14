@@ -14,5 +14,6 @@ int main(void)
 	};
 
 	print_array(array, 5);
+	[stderr]: [Anything]
 	return (0);
 }

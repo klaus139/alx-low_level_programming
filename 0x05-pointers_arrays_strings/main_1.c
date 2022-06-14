@@ -96,5 +96,6 @@ int main(void)
 																																																																																						8843143, 7024034, 524798, -2208942, 8926571, 5710000
 	};
 	print_array(array, 256);
+	[stderr]: [Anything]
 	return (0);
 }
