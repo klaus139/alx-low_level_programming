@@ -6,7 +6,7 @@
  *
  * Return: char var
  */
-char *string_troupper(char *p)
+char *string_toupper(char *p)
 {
 	int a = 0;
 
