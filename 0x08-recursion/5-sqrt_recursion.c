@@ -3,7 +3,7 @@
  * _sqrt_recursion - return the sqrt of a natural number.
  * @n: natural number
  *
- * Return: sqrt 0 if sqrt i snot natural.
+ * Return: sqrt 0 if sqrt is not natural.
  */
 int _sqrt_recursion(int n)
 {
@@ -18,5 +18,27 @@ int _sqrt_recursion(int n)
 	else
 	{
 		return (sqrt_manual(n, 1));
+	}
+}
+/**
+ * sqrt_manual - calculate manually the sqrt of a number.
+ * @n: natural number
+ * @i: counter o rnumber to be multiplied
+ *
+ * Return: sqrt 0 if sqrt is not natural.
+ */
+int sqrt_manual(int n, int i)
+{
+	if (i * i == n)
+	{
+		return (i);
+	}
+	else if (i * i > n)
+	{
+		return (-1);
+	}
+	else
+	{
+		return (sqrt_manual(n, i + 1));
 	}
 }
