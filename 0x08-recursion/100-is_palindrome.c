@@ -31,6 +31,10 @@ int pal(char *s, int i, int len)
 	}
 	else if (*(s + i) != *(s + len - 1 - i))
 	{
+		return (0);
+	}
+	else
+	{
 		return (pal(s, i + 1, len));
 	}
 }
