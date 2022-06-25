@@ -1,10 +1,9 @@
-#include "main.h"
 #include <stdio.h>
 /**
- * main - prints the name of the program
+ * main - prints the name of the program followed by a new line
  * @argc: name of command line argument
- * @argv: array name
- * Return: 0
+ * @argv: array that contains the program line argument
+ * Return: 0 - success
  */
 int main(int argc __attribute__((unused)), char *argv[])
 {
