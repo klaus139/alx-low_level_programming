@@ -4,6 +4,7 @@
 /*
  * malloc_checked - Entry point
  * @b: input amount
+ * *malloc_checked: Entry
  * Return: pointer to the new memory
  */
 void *malloc_checked(unsigned int b)
