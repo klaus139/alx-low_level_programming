@@ -7,41 +7,32 @@
  * @ptr: pointer to memory prev alloc, must free end
  * @old_size: input old
  * @new_size: input new
- * Return: 0
+ * Return: return pointer to array
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	char *dest, *src;
-	unsigned int i;
+	char *s;
 
-	if (new_size == old_size)
-		return (ptr);
-
-	if (ptr == NULL)
+	if (new_size > old_size)
 	{
-		ptr = mallow(new_size);
-		if (ptr == NULL)
-		{
-			return (NULL);
-		}
+		s = malloc(new_size);
+		free(ptr);
+		return (s);
+	}
+	if (new_size == old_size)
+	{
 		return (ptr);
 	}
-
+	if (ptr == NULL)
+	{
+		s = malloc(new_size);
+		free(ptr);
+		return (s);
+	}
 	if (new_size == 0 && ptr != NULL)
 	{
 		free(ptr);
 		return (NULL);
 	}
-
-	dest = malloc(new_size);
-	if (dest == NULL)
-		return (NULL);
-
-	src = ptr;
-
-	for (i = 0; i < new_size && i < old_size; i++)
-		dest[i] = src[i];
-	free(ptr);
-
-	return (dest);
+	return (ptr);
 }
