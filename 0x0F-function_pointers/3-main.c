@@ -21,9 +21,20 @@ int main(int argc, char *argv[])
 			exit(98);
 	}
 
+	arg1 = atoi(argv[1]);
+	arg2 = atoi(argv[3]);
+
+	func = get_op_func(argv[2]);
+
+	if (!func)
+	{
+		printf("Error\n");
+		exit(99);
+	}
+
 	o = *argv[2];
 
-	if ((o == '/' || o == '%') && arg2 == 0)
+	if ((o == '/' || 0 == '%') && arg2 == 0)
 	{
 		printf("Error\n");
 		exit(100);
