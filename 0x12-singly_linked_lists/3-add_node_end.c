@@ -8,7 +8,7 @@ int _strlen_recursion(char *s);
  * @str: string to set in the new node
  * Return: address pf tje new element, or NULL if it fails
  **/
-list_t *add_node_end(list_t *head, const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new, *aux = *head;
 
