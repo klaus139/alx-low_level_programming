@@ -5,7 +5,7 @@
  * @filename: filename
  * @text_content: added content
  *
- * Return: 1 if the foile exists, -1 if it does not
+ * Return: 1 if the foile exists, -1 if it does not fail or doesnt exist
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
